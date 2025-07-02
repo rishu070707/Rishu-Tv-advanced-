@@ -3,7 +3,7 @@ import MovieCard from './MovieCard';
 import SearchIcon from './search.svg';
 import Navbar from '../components/Navbar';
 
-const API_URL = 'http://www.omdbapi.com/?apikey=ab416681';
+const API_URL = 'https://www.omdbapi.com/?apikey=ab416681';
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);
@@ -18,7 +18,7 @@ const Movies = () => {
       const data = await res.json();
       setMovies(data.Search || []);
     } catch (err) {
-      console.error('Fetch error:', err);
+      console.error('Fetch error:', err); 
       setMovies([]);
     }
   };
