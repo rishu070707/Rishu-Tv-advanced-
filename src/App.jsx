@@ -1,10 +1,12 @@
 
 import './App.css'
-import Auth from './auth/auth'
+
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home'
 import Movies from './pages/Movies';
 import WishlistPage from './pages/WishlistPage';
+import Auth from './auth/Auth ';
+
 const images = [
   { position: [0, 0, 1.5], rotation: [0, 0, 0], url: '/mygallery/1.jpg',title:"the batman" },
   { position: [-0.8, 0, -0.6], rotation: [0, 0, 0], url: '/mygallery/2.jpeg',title:"american physcho" },
@@ -26,7 +28,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home images={images}/>} />
       <Route path="/wishlist" element={<WishlistPage/>}/>
-      <Route path="/login" element={<Auth />} />
+      <Route path="/login" element={<Auth/>} />
        <Route path="/movies" element={<Movies />} />
     </Routes>
 
