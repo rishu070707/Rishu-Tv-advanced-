@@ -5,7 +5,9 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home'
 import Movies from './pages/Movies';
 import WishlistPage from './pages/WishlistPage';
-import Auth from './auth/Auth ';
+import Auth from "./auth/Auth"; // ✅ CORRECT
+
+
 
 const images = [
   { position: [0, 0, 1.5], rotation: [0, 0, 0], url: '/mygallery/1.jpg',title:"the batman" },
