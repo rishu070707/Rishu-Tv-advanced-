@@ -48,12 +48,13 @@ const Auth = () => {
           <h2 className="text-3xl font-bold text-blue-400 mb-4 left-4">Welcome Back </h2>
 
         
-          <button
-            className="bg-red-700 hover:bg-red-800 text-white py-2 rounded-full font-semibold transition"
-            onClick={SignInwithGoogle}
-          >
-            Sign In with Google
-          </button>
+        <button
+  className="bg-red-700 hover:bg-red-800 text-white py-3 px-6 rounded-full font-semibold transition w-full md:w-auto text-center"
+  onClick={SignInwithGoogle}
+>
+  Sign In with Google
+</button>
+
         </div>
 
         {/* Right Side - Video */}
